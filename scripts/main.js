@@ -1,5 +1,5 @@
-let array = ['', '', '', '', '', '','', '', ''];
-function win() {
+let array = ['', '', '', '', '', '','', '', ''];  //مصفوفه تخزن قيمة ما تم تحديده في الحدث
+function win() {  //checking winner   
     
     if (array[0] == array[1] && array[0] == array[2] && Boolean(array[0])==true) {
         alert("the winner is " + array[0]);
@@ -27,24 +27,18 @@ $(function () {
 
 
 
-    // let array = ['', '', '', '', '', '','', '', ''];
-
-
-
     
 
     let counter = 0;
     $(".container div").click(function (event) {
 
 
-
         if (counter % 2 === 0) {
             $(event.target).text("x");
             $(event.target).off();
-            let value = event.target.id;
-
-
-            array[value] = "x";
+            let value = event.target.id; // value / الذي تم تحديده في الحدث / للمتغير /(id)/ اعطاء قيمة   
+            //id is number in html child of ".container" from 0 to 8 as array index that will save text 
+            array[value] = "x";// index / في المصفوفه بحسب   /"x"/ تخزين
             win()
         } else if (counter % 2 !== 0) {
             $(event.target).text("o");
@@ -53,13 +47,11 @@ $(function () {
             array[value] = "o";
             win()
         }
-        counter += 1;
+        if(counter==8){ alert("draw")}// if game is draw 
+        counter += 1; //click counter for if-condetion 
         console.log(array)
 
     })
-
-
-
 
 
 
