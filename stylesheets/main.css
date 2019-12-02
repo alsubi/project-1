@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+
+}
+
+.container {
+    background-color: gray;
+    border: 5px solid green;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+
+}
+
+.container div {
+    /* padding: 30px; */
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: white;
+    font-size:100px;
+    text-align:center;
+}
