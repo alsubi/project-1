@@ -107,7 +107,7 @@ img {
 .winner {
     color: white;
     width: 250px;
-    height: 10%;
+    height: 80px;
     position: absolute;
     background-color: rgb(129, 34, 34);
     display: inherit;
