@@ -5,7 +5,7 @@
 ## My Project Deployment:
 https://alsubi.github.io/project-1/
 
-## I created Project by use :
+## This project is created by using :
 * HTML
 * CSS
     * responsive with mobile versions
@@ -16,24 +16,9 @@ https://alsubi.github.io/project-1/
 
 ---
 
+
 ## lines in " js " :
 
-* ### function reset()
-To re-rounds the game .
- Reset game  .
-
-```js
-function reset(){
-    array = ['', '', '', '', '', '','', '', ''];
-    $(".container div").text("");
-        $(".container div").off();
-        $(".container div").on("click", game)
-        counter = 0;
-        $(".msg>.player,.winner").hide();
-        $(".playerTurn").text("");
-        $(".container div").css("background","rgb(0,0,0");
-}
-```
 
 * ### function win()
 
